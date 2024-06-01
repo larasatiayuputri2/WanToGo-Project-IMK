@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Check Ticket</title>
+
+  <!-- ! custom css file link -->
+
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <!-- ! icon website -->
+
+  <link rel="icon" href="../assets/logo/WanTogo Icon.png" />
+
+  <!-- ! sweetaalert2 script -->
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- ! footer cdn link -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <!-- ! Header section starts -->
+
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="../assets/logo/Logo Website.gif" width="100%" alt="" />
+      </div>
+      <ul class="navbar hidden">
+        <li>
+          <a href="../../index.html#home">Home</a>
+        </li>
+        <li>
+          <a href="./book-ticket.html">Book</a>
+        </li>
+        <li>
+          <a href="../../index.html#services">Service</a>
+        </li>
+        <li>
+          <a href="../../index.html#gallery">Gallery</a>
+        </li>
+        <li>
+          <a href="../../index.html#review">Review</a>
+        </li>
+        <img src="../assets/menu-icon/menu.png" alt="menu" class="menu-icon" id="menu-bar" />
+    </nav>
+    <div class="banner"></div>
+  </header>
+
+  <!-- ! Header section ends -->
+
+  <!-- ! Main section starts -->
+
+  <main>
+    <!-- ! Check ticket starts -->
+
+    <section class="column-check-ticket">
+      <div class="box-title">
+        <h3>CHECK TICKET</h3>
+      </div>
+      <div class="ticket-column">
+        <label for="ticketNumber"> ticket number: </label>
+        <input type="text" id="ticketNumber" autocomplete="off" />
+      </div>
+      <div class="ticket-column">
+        <label for="name"> name: </label>
+        <input type="text" id="name" readonly />
+      </div>
+      <div class="ticket-column">
+        <label for="email"> email: </label>
+        <input type="text" id="email" readonly />
+      </div>
+      <div class="ticket-column">
+        <label for="phone"> phone: </label>
+        <input type="text" id="phone" readonly />
+      </div>
+      <div class="ticket-column">
+        <label for="destination"> destination: </label>
+        <input type="text" id="destination" readonly />
+      </div>
+      <div class="ticket-column">
+        <label for="quantity"> quantity: </label>
+        <input type="text" id="quantity" readonly />
+      </div>
+      <div class="ticket-column">
+        <label for="arrivalDate"> arrival: </label>
+        <input type="text" id="arrivalDate" readonly />
+      </div>
+      <div class="ticket-column">
+        <label for="leavingDate"> leaving: </label>
+        <input type="text" id="leavingDate" readonly />
+      </div>
+      <div class="submit-ticket-btn">
+        <div id="spinner"></div>
+        <button class="btn" id="checkTicketBtn">check</button>
+      </div>
+    </section>
+
+    <!-- ! Check ticket ends -->
+
+    <!-- ! Loader starts -->
+
+    <div class="loader">
+      <div class="loader-text">This will only take a while...</div>
+    </div>
+
+    <!-- ! Loader ends -->
+  </main>
+
+  <!-- ! Main section ends -->
+
+  <!-- ! Footer section starts -->
+
+  <footer class="footer">
+    <div class="footer-left">
+      <h3>Payment Method</h3>
+      <div class="credit-cards">
+        <img src="../assets/footer-section/visa.png" alt="" />
+        <img src="../assets/footer-section/mastercard.png" alt="" />
+        <img src="../assets/footer-section/paypal.png" alt="" />
+      </div>
+      <p class="footer-copyright">2024 WanToGo</p>
+    </div>
+
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>Indonesia</span> DKI Jakarta, jakarta Selatan</p>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+62 831-6591-7178</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@gmail.com">larasatiayuputri2@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <p class="footer-about">
+        <img src="../assets/logo/WanToGo Logo.png" alt="" />
+      </p>
+
+      <div class="footer-media">
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener"><i class="fa fa-youtube"></i></a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ! Footer section ends -->
+
+  <!-- ! custom js file link -->
+  <script src="../js/check-ticket.js"></script>
+</body>
+
+</html>
